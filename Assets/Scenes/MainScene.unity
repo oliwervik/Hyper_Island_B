@@ -1545,6 +1545,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 580744023}
+  - component: {fileID: 580744024}
   m_Layer: 0
   m_Name: Database
   m_TagString: Untagged
@@ -1567,6 +1568,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &580744024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580744022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72f6986d73b1d8746ae17bd8997d81e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  databaseFile: Database.sqlite
 --- !u!1 &637697755
 GameObject:
   m_ObjectHideFlags: 0
@@ -3813,6 +3827,7 @@ GameObject:
   - component: {fileID: 1680626632}
   - component: {fileID: 1680626631}
   - component: {fileID: 1680626630}
+  - component: {fileID: 1680626634}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3904,6 +3919,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1680626634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1680626629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c2e588a00d6cde46b2b89ea56b23618, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  createAccountButton: {fileID: 1182355020}
+  getAccountButton: {fileID: 208640786}
+  getAllAccountsButton: {fileID: 1009087983}
+  nameInput: {fileID: 422897149}
+  emailInput: {fileID: 318602661}
+  accountQueryInput: {fileID: 637697757}
 --- !u!1 &1726906208
 GameObject:
   m_ObjectHideFlags: 0

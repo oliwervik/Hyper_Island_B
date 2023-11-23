@@ -5,8 +5,8 @@ public class Logger : MonoBehaviour
 {
     public static Logger Instance { get; private set; }
 
-    public GameObject logPrefab; // Assign your TextMeshProUGUI prefab
-    public Transform logContainer; // Assign the ScrollView's content transform
+    public GameObject logPrefab;
+    public Transform logContainer;
 
     void Awake()
     {
@@ -41,6 +41,5 @@ public class Logger : MonoBehaviour
     {
         var logEntry = Instantiate(logPrefab, logContainer);
         logEntry.GetComponent<TextMeshProUGUI>().text = text;
-        // Additional styling or modifications can be done here
     }
 }
