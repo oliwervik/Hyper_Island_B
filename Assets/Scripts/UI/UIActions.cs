@@ -15,7 +15,7 @@ public class UIActions : MonoBehaviour
 
     public TMP_InputField accountQueryInput;
 
-    //public ClientController clientController;
+    public ClientController clientController;
     public static UIActions Instance { get; private set; }
 
     Database _db;
@@ -32,10 +32,10 @@ public class UIActions : MonoBehaviour
         }
     }
 
-    //public void SetClientController(ClientController controller)
-    //{
-    //    clientController = controller;
-    //}
+    public void SetClientController(ClientController controller)
+    {
+        clientController = controller;
+    }
 
     void Start()
     {
@@ -44,7 +44,7 @@ public class UIActions : MonoBehaviour
         createAccountButton.onClick.AddListener(() => {
             //Here we will use the ClientController instead of the db directly
 
-            //clientController.ClientAddAccount(nameInput.text, emailInput.text);
+            clientController.ClientAddAccount(nameInput.text, emailInput.text);
 
             nameInput.text = "";
             emailInput.text = "";
